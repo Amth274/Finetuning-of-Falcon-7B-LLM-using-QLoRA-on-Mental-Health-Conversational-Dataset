@@ -46,8 +46,8 @@ pip install gradio==3.41.0 transformers==4.32.0 langchain==0.0.273 accelerate==0
 ```
 
 ## Model Inference:
-PEFT fine-tuned model has been updated here: [heliosbrahma/falcon-7b-sharded-bf16-finetuned-mental-health-conversational](https://huggingface.co/heliosbrahma/falcon-7b-sharded-bf16-finetuned-mental-health-conversational). <br>
 Run `gradio_chatbot_app.ipynb` notebook to get a chatbot like interface using Gradio as frontend for demo. Play around with different hyperparameter config settings for answer generation and run multiple queries to check for the quality of generated response. 
+
 
 It takes less than 3 minutes to generate the model response. Compare the PEFT model response with the original model response in `funetuned_qlora_falcon7b.ipynb` notebook.
 
