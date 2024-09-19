@@ -17,8 +17,7 @@ The dataset was curated from online FAQs related to mental health, popular healt
 NOTE: _All questions and answers have been anonymized to remove any PII data and preprocessed to remove any unwanted characters._
 
 ## Model Finetuning:
-This is the major step in the entire project. I have used sharded Falcon-7B pre-trained model and finetuned it to using the QLoRA technique on my custom mental health dataset. The entire finetuning process took less than an hour and it was finetuned entirely on Nvidia A100 from Google Colab Pro. But, it could also be trained on free-tier GPU using Nvidia T4 provided by Colab. In that case,  ensure to use max_steps less than 150.
-The rationale behind using sharded pre-trained model is mentioned in a blog post: [Fine-tuning of Falcon-7B Large Language Model using QLoRA on Mental Health Dataset](https://medium.com/@iamarunbrahma/fine-tuning-of-falcon-7b-large-language-model-using-qlora-on-mental-health-dataset-aa290eb6ec85)<br>
+This is the major step in the entire project. I have used sharded Falcon-7B pre-trained model and finetuned it to using the QLoRA technique on my custom mental health dataset. The entire finetuning process took less than an hour and it was finetuned entirely on Nvidia A100 from Google Colab Pro. But, it could also be trained on free-tier GPU using Nvidia T4 provided by Colab. In that case,  ensure to use max_steps less than 150.<br>
 **Model**: Fine-tuned Falcon 7B using QLoRA and PEFT.<br>
 **Efficiency:** 4-bit quantization for reduced memory usage.<br>
 **Interface:** Deployed using a Gradio web-based interface.<br>
